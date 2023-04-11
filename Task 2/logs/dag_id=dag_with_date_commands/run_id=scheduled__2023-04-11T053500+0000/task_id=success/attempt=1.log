@@ -1,0 +1,24 @@
+[2023-04-11T10:14:00.232+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_date_commands.success scheduled__2023-04-11T05:35:00+00:00 [queued]>
+[2023-04-11T10:14:00.485+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_date_commands.success scheduled__2023-04-11T05:35:00+00:00 [queued]>
+[2023-04-11T10:14:00.497+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-11T10:14:00.505+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 3
+[2023-04-11T10:14:00.515+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-11T10:14:00.945+0000] {taskinstance.py:1309} INFO - Executing <Task(_PythonDecoratedOperator): success> on 2023-04-11 05:35:00+00:00
+[2023-04-11T10:14:01.037+0000] {standard_task_runner.py:55} INFO - Started process 999 to run task
+[2023-04-11T10:14:01.063+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'dag_with_date_commands', 'success', 'scheduled__2023-04-11T05:35:00+00:00', '--job-id', '9317', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_date_commands.py', '--cfg-path', '/tmp/tmpvomy4b3l']
+[2023-04-11T10:14:01.118+0000] {standard_task_runner.py:83} INFO - Job 9317: Subtask success
+[2023-04-11T10:14:02.509+0000] {task_command.py:389} INFO - Running <TaskInstance: dag_with_date_commands.success scheduled__2023-04-11T05:35:00+00:00 [running]> on host 0393b2e8282a
+[2023-04-11T10:14:04.884+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=rohit
+AIRFLOW_CTX_DAG_ID=dag_with_date_commands
+AIRFLOW_CTX_TASK_ID=success
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-11T05:35:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-11T05:35:00+00:00
+[2023-04-11T10:14:04.889+0000] {logging_mixin.py:137} INFO - Dag executed succesfully
+[2023-04-11T10:14:04.902+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-04-11T10:14:05.099+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=dag_with_date_commands, task_id=success, execution_date=20230411T053500, start_date=20230411T101400, end_date=20230411T101405
+[2023-04-11T10:14:06.557+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-04-11T10:14:06.770+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,26 @@
+#container2 {
+  display: inline-block;
+  margin-top: 20vh;
+  border: 3px solid violet;
+  width: 793px;
+  height: auto;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.scientificInput {
+  font-size: 35px;
+  padding: 12px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  width: 769px;
+}
+
+/* .container {
+  display: none;
+} */
+#container2 {
+  display: none;
+}
